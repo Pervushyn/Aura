@@ -19,9 +19,50 @@
     />
 
     <link rel="stylesheet" href="./css/steyles.css" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>Aura</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <nav class="header-nav">
+            <div class="logo-wrap">
+              <a class="logo-link" href="./index.html">
+                <img
+                  class="logo-img"
+                  src="./images/logo.png"
+                  alt="logo"
+                  width="75"
+                  height="30"
+                />
+              </a>
+              <a class="header-link" href="#">
+                <div class="header-icon">
+                  <svg width="36" height="36">
+                    <use
+                      href="./images/icons.svg#icon-account_balance_wallet"
+                    ></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Авторы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Коллекции</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Сервисы</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-button">Кошелёк</button>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
