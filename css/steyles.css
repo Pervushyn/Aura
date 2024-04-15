@@ -1,3 +1,19 @@
+:root {
+  --bcg-white: #fff;
+  --c-text-black: #07060b;
+  --bcg-black: #07060b;
+  --c-text-white: #fff;
+  --bcg-gradient-btn: linear-gradient(#46f4db, #57d272 100%);
+  --c-primary-activ: #57d272;
+  --c-primary: #46f4db;
+  --c-black-secondary: #06060b;
+  --c-red: #d13130;
+  --bcg-red: #d13130;
+  --c-grey-light: #ededf2;
+  --c-grey-middle: #95959d;
+  --c-dark-grey: #717178;
+}
+
 body {
   font-family: "Roboto", "Russo One", sans-serif;
   font-weight: 400;
