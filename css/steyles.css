@@ -50,6 +50,11 @@ h6 {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -77,6 +82,7 @@ header {
   position: relative;
   margin: 0 auto;
   max-width: 320px;
+  padding-bottom: 10px;
 }
 
 .header-button {
@@ -128,6 +134,60 @@ header {
 }
 /* END Header */
 
+/* Hero-section */
+
+.hero-section {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0;
+  background-color: var(--bcg-black);
+  color: var(--c-text-white);
+}
+.hero-container {
+  padding: 64px 12px;
+}
+.hero-title {
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero-btn {
+  font-weight: 700;
+  padding: 15px 38px;
+  border: none;
+  border-radius: 40px;
+  background: var(--bcg-gradient-btn);
+  width: 132px;
+  transition: background-color 0.2s ease;
+}
+.hero-btn:active {
+  background: var(--c-primary-activ);
+}
+.hero-link {
+  background-color: var(--bcg-black);
+  color: var(--c-text-white);
+  border: 5px solid var(--c-primary);
+  font-weight: 700;
+  border-radius: 40px;
+  padding: 11px 20px;
+  width: 164px;
+  transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+.hero-link:active {
+  background-color: var(--c-primary-activ);
+  color: var(--bcg-black);
+  border: 5px solid var(--c-primary-activ);
+}
+
+/* END Hero-section */
+
 @media screen and (min-width: 1024px) {
   header {
     max-width: 1024px;
@@ -178,6 +238,37 @@ header {
     background-color: var(--c-primary);
     color: var(--bcg-white);
   }
+
+  .hero-section {
+    max-width: 1024px;
+  }
+  .hero-wrap {
+    display: flex;
+  }
+  .hero-container {
+    padding: 160px 35px;
+  }
+  .hero-title {
+    font-size: 70px;
+    margin-bottom: 36px;
+    width: 620px;
+  }
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background: var(--c-primary);
+  }
+  .hero-link:hover,
+  .hero-link:focus {
+    background-color: var(--c-primary);
+    color: var(--bcg-black);
+    border: 5px solid var(--c-primary);
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -186,5 +277,11 @@ header {
   }
   .container {
     padding: 0 320px;
+  }
+  .hero-section {
+    max-width: 1920px;
+  }
+  .hero-container {
+    padding: 160px 35px 160px 320px;
   }
 }
