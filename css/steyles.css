@@ -630,6 +630,13 @@ header {
   .other-auctions-item:nth-child(-n + 6) {
     display: block;
   }
+  .auction-other-btn {
+    padding: 25px 80px;
+  }
+
+  .auction-other-btn:hover {
+    background-color: var(--c-primary);
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -652,5 +659,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+  }
+  .other-auctions-item {
+    flex-basis: calc((100% - 96px) / 4);
+  }
+  .other-auctions-item {
+    display: block;
+  }
+  .ghost {
+    width: 186px;
   }
 }
