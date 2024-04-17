@@ -338,21 +338,30 @@ header {
 .title-tertiary {
   font-family: "Russo One", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   margin-bottom: 32px;
 }
 .other-auctions-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .other-auctions-item {
   flex-basis: 100%;
 }
+.other-auctions-item {
+  display: none; /* Скрыть все элементы */
+}
+
+.other-auctions-item:first-child {
+  display: block; /* Показать только первый элемент по умолчанию */
+}
+
 .other-auctions-photo {
   background-color: var(--c-grey-light);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  width: 296px;
   padding: 7px 0;
 }
 .other-auctions-img {
@@ -369,7 +378,6 @@ header {
   background-color: var(--c-grey-light);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  width: 296px;
   padding: 16px 16px 32px;
   background-color: var(--bcg-black);
   color: var(--c-text-white);
@@ -532,8 +540,9 @@ header {
   }
   .auction-inner {
     flex-direction: row;
-    gap: 32px;
+    margin-bottom: 90px;
   }
+
   .img-wolf {
     width: 460px;
   }
@@ -605,6 +614,21 @@ header {
   }
   .auction-price {
     font-size: 20px;
+  }
+  .eclipse-list {
+    display: none;
+  }
+
+  .other-auctions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .other-auctions-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+  .other-auctions-item:nth-child(-n + 6) {
+    display: block;
   }
 }
 
