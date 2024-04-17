@@ -16,6 +16,9 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M1.143 1.143h29.714v29.714h-29.714v-29.714z"></path>
 <path fill="none" stroke="#46f4db" style="stroke: var(--color1, #46f4db)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5714" d="M25.027 9.331l-11.314 11.314-6.465-6.465"></path>
 </symbol>
+<symbol id="icon-Ellipse-5" viewBox="0 0 32 32">
+<path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
 <symbol id="icon-Vector-3" viewBox="0 0 80 32">
 <path d="M5.594 19.386h-5.383l7.316-19.386h5.521l7.316 19.386h-5.383l-1.242-3.462h-6.902l-1.242 3.462zM8.078 12.324h4.417l-2.209-6.508-2.209 6.508z"></path>
 <path d="M33.627 0h4.969v14.124c0 1.939-0.442 3.351-1.325 4.237-0.865 0.868-2.264 1.302-4.196 1.302h-6.35c-1.933 0-3.34-0.434-4.224-1.302-0.865-0.886-1.297-2.299-1.297-4.237v-14.124h4.969v14.124c0 1.108 0.552 1.662 1.656 1.662h4.141c1.104 0 1.656-0.554 1.656-1.662v-14.124z"></path>

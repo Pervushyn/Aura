@@ -187,14 +187,22 @@ header {
 }
 
 /* END Hero-section */
+
+/* auction-section */
+
 .auction-section {
   margin: 0 auto;
   max-width: 320px;
   padding: 80px 0;
 }
+.action-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
 .auction-title-wrap {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -228,6 +236,201 @@ header {
   left: 14px;
   top: 12px;
 }
+
+.auction-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+.auction-content-wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auction-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--c-grey-light);
+  padding: 11px 16px;
+  border-radius: 18px;
+  width: 170px;
+}
+.action-name {
+  font-weight: 700;
+}
+.auction-nic {
+  font-size: 30px;
+}
+.auction-bet-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.auction-bet {
+  padding: 16px 28px 16px 16px;
+  background-color: var(--c-grey-light);
+  border-radius: 18px;
+  width: 174px;
+}
+.auction-black-quaternary {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.auction-wight {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.auction-price {
+  font-weight: 700;
+  color: var(--c-grey-middle);
+}
+.action-time {
+  padding: 16px;
+  background-color: var(--bcg-black);
+  border-radius: 18px;
+  width: 200px;
+}
+.auction-white-quaternary {
+  color: var(--c-text-white);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.auction-time-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.time {
+  color: var(--c-text-white);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.time-description {
+  color: var(--c-text-white);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.aucion-clock {
+  display: none;
+}
+
+.auction-btn {
+  background-color: var(--c-primary);
+  padding: 15px 15px;
+  border-radius: 40px;
+  font-weight: 700;
+  border: none;
+  width: 200px;
+  transition: background-color 1s ease-in-out;
+  margin-top: 16px;
+}
+.auction-btn:active {
+  background-color: var(--c-primary-activ);
+}
+
+.title-tertiary {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+.other-auctions-list {
+  display: flex;
+}
+.other-auctions-item {
+  flex-basis: 100%;
+}
+.other-auctions-photo {
+  background-color: var(--c-grey-light);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 296px;
+  padding: 7px 0;
+}
+.other-auctions-img {
+  margin: 0 auto;
+  width: 160px;
+}
+.other-wrap-name {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.other-auctions-content {
+  background-color: var(--c-grey-light);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 296px;
+  padding: 16px 16px 32px;
+  background-color: var(--bcg-black);
+  color: var(--c-text-white);
+}
+.other-img-name {
+  width: 24px;
+  height: 24px;
+}
+.other-name {
+  font-weight: 700;
+}
+.other-nic {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.other-wight {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--c-primary);
+  margin-bottom: 12px;
+}
+.other-time {
+  font-weight: 700;
+  color: var(--c-grey-middle);
+}
+.eclipse-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.list-svg {
+  fill: var(--c-primary);
+}
+.list-svg-grey {
+  fill: var(--c-grey-light);
+}
+.auction-other-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--bcg-white);
+  border: 5px solid var(--c-primary);
+  padding: 10px 27px;
+  border-radius: 40px;
+  transition: background-color 0.5s ease-in-out;
+}
+.auction-other-btn:active {
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--c-primary);
+  border: 5px solid var(--c-primary);
+}
+/* END auction-section */
 
 @media screen and (min-width: 1024px) {
   header {
@@ -311,6 +514,98 @@ header {
   .hero-btn:focus {
     background: var(--c-primary);
   }
+
+  .auction-section {
+    max-width: 1024px;
+    padding: 90px 0;
+  }
+  .title-secondary {
+    font-size: 60px;
+  }
+  .auction-link {
+    font-size: 16px;
+    padding: 10px 14px 10px 26px;
+  }
+  .auction-link::before {
+    left: 16px;
+    top: 16px;
+  }
+  .auction-inner {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .img-wolf {
+    width: 460px;
+  }
+  .auction-content-wraper {
+    gap: 32px;
+  }
+  .auction-item {
+    gap: 16px;
+    width: 228px;
+  }
+  .action-name {
+    font-size: 20px;
+  }
+  .auction-btn {
+    margin-top: 0;
+  }
+  .auction-nic {
+    font-size: 48px;
+  }
+  .auction-bet-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .auction-bet {
+    width: 296px;
+  }
+  .action-time {
+    position: relative;
+    padding: 32px;
+    background-color: var(--bcg-black);
+    border-radius: 18px;
+    width: 460px;
+  }
+  .auction-white-quaternary {
+    font-size: 20px;
+  }
+  .time {
+    font-size: 48px;
+  }
+  .time-description {
+    font-size: 20px;
+  }
+  /* .auction-time-wrapper {
+    display: flex;
+    gap: 44px;
+  } */
+  .aucion-clock {
+    display: block;
+    position: absolute;
+    width: 141px;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+  }
+  .auction-btn {
+    font-size: 20px;
+    width: 296px;
+    padding: 25px 70px;
+  }
+
+  .auction-black-quaternary {
+    font-size: 20px;
+  }
+  .auction-wight {
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+  .auction-price {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -325,5 +620,13 @@ header {
   }
   .hero-container {
     padding: 160px 35px 160px 320px;
+  }
+  .auction-section {
+    max-width: 1920px;
+  }
+  .auction-bet-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }

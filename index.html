@@ -100,6 +100,7 @@
           </picture>
         </div>
       </section>
+
       <section class="auction-section">
         <div class="container">
           <div class="auction-title-wrap">
@@ -108,10 +109,242 @@
               <a href="">Live auction</a>
             </div>
           </div>
-          <div class="auction-content">
-            <img src="" alt="wolf" />
-            <div></div>
+          <div class="auction-inner">
+            <div class="auction-picture">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/action/tab-wolf.png    1x,
+                    ./images/action/tab-wolf@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 320px)"
+                  srcset="
+                    ./images/action/mob-wolf.png    1x,
+                    ./images/action/mob-wolf@2x.png 2x
+                  "
+                />
+                <img
+                  class="img-wolf"
+                  src="./images/action/mob-wolf.png"
+                  alt="wolf"
+                />
+              </picture>
+            </div>
+
+            <div class="auction-content-wraper">
+              <div class="auction-item">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./images/action/tab-dog.png    1x,
+                      ./images/action/tab-dog@2x.png 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 320px)"
+                    srcset="
+                      ./images/action/mob-dog.png    1x,
+                      ./images/action/mob-dog@2x.png 2x
+                    "
+                  />
+                  <img src="./images/action/mob-dog.png" alt="dog" />
+                </picture>
+                <p class="action-name">Serge_VM222</p>
+              </div>
+              <p class="auction-nic">Witcherrr_3 (xml_t5)</p>
+              <div class="auction-bet-wrap">
+                <div class="auction-bet">
+                  <h3 class="auction-black-quaternary">Ставка:</h3>
+                  <p class="auction-wight">0.10 ETH</p>
+                  <p class="auction-price">$351.24</p>
+                </div>
+                <div class="action-time">
+                  <h3 class="auction-white-quaternary">Окончание через:</h3>
+                  <div class="auction-time-wrapper">
+                    <div class="auction-time-wrap">
+                      <div class="auction-time-item">
+                        <p class="time">01</p>
+                        <p class="time-description">Час</p>
+                      </div>
+                      <div class="auction-time-item">
+                        <p class="time">48</p>
+                        <p class="time-description">Мин</p>
+                      </div>
+                      <div class="auction-time-item">
+                        <p class="time">47</p>
+                        <p class="time-description">Сек</p>
+                      </div>
+                    </div>
+                    <img
+                      class="aucion-clock"
+                      srcset="
+                        ./images/action/alarm-clock.png    1x,
+                        ./images/action/alarm-clock@2x.png 2x
+                      "
+                      src="./images/action/alarm-clock.png"
+                      alt="clock"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="auction-btn">Cделать ставку</button>
+            </div>
           </div>
+          <h3 class="title-tertiary">Другие аукционы</h3>
+          <ul class="other-auctions-list">
+            <li class="other-auctions-item">
+              <div>
+                <div class="other-auctions-photo">
+                  <img
+                    class="other-auctions-img"
+                    src="./images/action/other-auctions/alien.png"
+                    alt="alien"
+                  />
+                </div>
+                <div class="other-auctions-content">
+                  <div class="other-wrap-name">
+                    <img
+                      class="other-img-name"
+                      srcset="
+                        ./images/action/other-auctions/Ellipse.png    1x,
+                        ./images/action/other-auctions/Ellipse@2x.png 2x
+                      "
+                      src="./images/action/other-auctions/Ellipse.png"
+                      alt="Ellipse"
+                    />
+                    <p class="other-name">Frank.Nagval</p>
+                  </div>
+                  <p class="other-nic">Alien (green) e_e</p>
+                  <p class="other-wight">0.02 ETH</p>
+                  <p class="other-time">03 часа 25 мин 23 сек</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div>
+                  <img src="" alt="" />
+                </div>
+                <div></div>
+              </div>
+            </li>
+
+            <li class="other-auctions-item">
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="eclipse-list">
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10">
+                <use
+                  class="list-svg-grey"
+                  href="./images/icons.svg#icon-Ellipse-5"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+          <button class="auction-other-btn" type="button">Все аукционы</button>
         </div>
       </section>
     </main>
