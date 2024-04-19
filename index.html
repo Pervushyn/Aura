@@ -641,6 +641,78 @@
           </ul>
         </div>
       </section>
+      <section class="mailing-section">
+        <div class="container">
+          <div class="mailing-position">
+            <h3 class="title-mailing">
+              Будь в курсе новинок! Подпишись на рассылку!
+            </h3>
+            <form>
+              <div class="input-name">
+                <label class="visually-hidden" for="user-name">name</label>
+                <input
+                  class="input-name-item"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="input-email">
+                <label class="visually-hidden" for="user-email" id="emailInput"
+                  >Email</label
+                >
+                <input
+                  class="input-email-item"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Email"
+                />
+                <!-- <div class="error-message">Некорректный формат</div> -->
+              </div>
+
+              <button class="mailing-btn" type="submit">Подписаться</button>
+
+              <div class="checkbox">
+                <input type="checkbox" id="privacy-policy" />
+                <label class="label-check" for="privacy-policy"
+                  >Согласен на обработку персональных данных</label
+                >
+              </div>
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    ./images/mailing/desc-ok.png    1x,
+                    ./images/mailing/desc-ok@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./images/mailing/tab-ok.png    1x,
+                    ./images/mailing/tab-ok@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1023.8px)"
+                  srcset="
+                    ./images/mailing/ok.png    1x,
+                    ./images/mailing/ok@2x.png 2x
+                  "
+                />
+                <img
+                  class="img-ok"
+                  src="./images/mailing/ok.png"
+                  alt="stickers"
+                />
+              </picture>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- <script src="./script/script.js" type="module"></script> -->
   </body>
 </html>
