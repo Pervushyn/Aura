@@ -701,6 +701,71 @@ input {
 
 /* END autor section */
 
+/* buy-section */
+
+.buy-section {
+  margin: 0 auto;
+  background-color: var(--bcg-black);
+  color: var(--c-text-white);
+  padding: 32px 0;
+  max-width: 320px;
+}
+.buy-title {
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.buy-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 16px;
+}
+.buy-item {
+  flex-basis: calc((100% - 16px) / 2);
+}
+.buy-content {
+  padding: 16px 0 16px 16px;
+  background-color: var(--bcg-white);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.buy-nick {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.nick-img {
+  width: 24px;
+  height: 24px;
+}
+.nick-text {
+  color: var(--c-text-black);
+  font-weight: 700;
+}
+.nick-name {
+  color: var(--c-text-black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.buy-wieght {
+  color: var(--c-text-black);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.buy-price {
+  color: var(--c-grey-middle);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ENDbuy-section */
+
 @media screen and (min-width: 1024px) {
   header {
     max-width: 1024px;
@@ -1052,6 +1117,53 @@ input {
   .add-btn {
     margin-bottom: 0;
   }
+
+  .buy-section {
+    padding: 90px 0;
+    max-width: 1024px;
+  }
+  .buy-title {
+    font-size: 60px;
+    margin-bottom: 32px;
+  }
+  .buy-list {
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+  .buy-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .buy-wrap {
+    display: flex;
+  }
+  .buy-content {
+    padding: 32px 0 32px 32px;
+    background-color: var(--bcg-white);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+  }
+  .buy-img {
+    width: 148px;
+  }
+  .buy-nick {
+    margin-bottom: 9px;
+  }
+  .nick-name {
+    font-size: 46px;
+  }
+  .buy-inner-wrap {
+    display: flex;
+    gap: 6px;
+  }
+  .buy-wieght {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .buy-price {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -1168,5 +1280,8 @@ input {
     left: 230px;
     bottom: 0;
     z-index: 2;
+  }
+  .buy-section {
+    max-width: 1920px;
   }
 }
